@@ -1,0 +1,22 @@
+{
+    "baseUrl": "",
+    "env": {
+      "TEST_USER_LOGIN": "TEST_LOGIN",
+      "TEST_USER_PASSWORD": "TEST_PASSWORD",
+      "EXP_STAGE": "EXP_STAGE",
+      "SESS_EXP": "SESS_EXP",
+      "SSO_SESS": "SSO_SESS",
+      "SSO_UI": "SSO_UI"
+    },
+    "video": false,
+    "viewportWidth": 1920,
+    "viewportHeight": 1080,
+    "requestTimeout": 10000,
+    "defaultCommandTimeout": 15000,
+    "execTimeout": 50000,
+    "taskTimeout": 50000,
+    "pageLoadTimeout": 90000,
+    "responseTimeout": 50000,
+    "screenshotsFolder": "mochawesome-report/screenshots",
+    "blockHosts": [ "*fonts.googleapis.com", "*google-analytics.com" ]
+  }

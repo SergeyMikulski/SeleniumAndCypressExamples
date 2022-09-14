@@ -1,0 +1,25 @@
+{
+  "name": "application.cypress.end2end.tests",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "cypress run --browser chrome --reporter mocha-multi-reporters --reporter-options configFile=reporter-config.json",
+    "report:merge": "mochawesome-merge ./mochawesome-report/*.json > result.json",
+    "report:generate": "marge --showPassed false --reportTitle \"Your report title\" result.json",
+    "report": "npm run report:merge && npm run report:generate"
+  },
+  "author": "sergey.mikulski",
+  "license": "ISC",
+  "dependencies": {
+    "cypress-interface": "^8.7.675"
+  },
+  "devDependencies": {
+    "cypress-document-stream": "^0.3.6",
+    "cypress-interface": "^8.7.675",
+    "@types/node": "^14.17.4",
+    "cypress": "^9.5.4",
+    "cypress-image-snapshot": "^4.0.1",
+    "dayjs": "^1.10.4",
+    "typescript": "^3.9.10"
+  }
+}
